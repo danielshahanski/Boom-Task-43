@@ -2,14 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
+    <title>No new message</title>
     <meta
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      function updateTitle() {
+        setTimeout(function() {
+          document.getElementsByTagName('title')[0].innerHTML = 'One new message';
+        }, 3000);
+      }
+    </script>
   </head>
-  <body>
+  <body onload="updateTitle()">
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
